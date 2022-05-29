@@ -1,0 +1,28 @@
+import tkinter as tk
+
+
+win = tk.Tk()
+h = 500
+w = 600
+win.config(bg='purple')
+win.title('Batching Procesing')
+win.geometry(f'{h}x{w}+10+10')
+win.minsize(300,400)
+win.maxsize(700,800)
+win.resizable(True, True)
+
+btn1 = tk.Button(win,text='Choose File')
+btn2 = tk.Button(win,text='Batch Processing')
+btn3 = tk.Button(win,text='About Us')
+
+btn1.grid(row=0, column=0,stick='we')
+btn2.grid(row=1, column=0,stick='we')
+btn3.grid(row=2, column=0,stick='we')
+
+win.grid_columnconfigure(0,minsize=200)
+win.grid_columnconfigure(0,minsize=200)
+win.grid_columnconfigure(0,minsize=200)
+
+
+
+win.mainloop()
